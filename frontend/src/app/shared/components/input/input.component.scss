@@ -1,0 +1,36 @@
+input {
+  padding: 10px 10px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: #222;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.12);
+    background: #f0f8ff;
+  }
+  &:disabled {
+    background: #f3f3f3;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+}
+
+@media (max-width: 480px) {
+  input {
+    font-size: 1rem;
+    padding: 14px 11px;
+  }
+}
+@media (max-width: 320px) {
+  input {
+    font-size: 0.95rem;
+    padding: 10px 8px;
+  }
+}

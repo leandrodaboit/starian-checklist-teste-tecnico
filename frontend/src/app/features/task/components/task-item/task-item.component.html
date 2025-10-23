@@ -1,0 +1,8 @@
+<li class="task-item">
+  <div class="left">
+    <input type="checkbox" [checked]="task.completed" (change)="onUpdate()" />
+    <span [class.completed]="task.completed">{{ task.title }}</span>
+  </div>
+
+  <app-button [variant]="'danger'" (click)="onRemove()">Remove</app-button>
+</li>

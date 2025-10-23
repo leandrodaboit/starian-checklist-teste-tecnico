@@ -1,0 +1,12 @@
+<main class="container">
+  <h1>Todo List</h1>
+  <app-task-form
+    (addTask)="onAddTask($event)"
+  ></app-task-form>
+  <h2>Tasks</h2>
+  <app-task-list
+    [tasks]="tasks$ | async"
+    (updateTask)="onUpdateTask($event)"
+    (removeTask)="onRemoveTask($event)"
+  ></app-task-list>
+</main>

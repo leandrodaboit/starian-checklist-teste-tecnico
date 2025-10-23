@@ -1,0 +1,16 @@
+<div class="task-list-container">
+  <ul *ngIf="tasks && tasks.length > 0; else emptyState">
+    <app-task-item
+      *ngFor="let task of tasks"
+      [task]="task"
+      (update)="onUpdateTask(task)"
+      (remove)="onRemoveTask($event)"
+    ></app-task-item>
+  </ul>
+
+  <ng-template #emptyState>
+    <div class="task-empty">
+      No tasks found.
+    </div>
+  </ng-template>
+</div>

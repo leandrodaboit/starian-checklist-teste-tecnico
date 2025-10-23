@@ -1,0 +1,10 @@
+<div class="task-form">
+  <app-input
+    placeholder="Enter a new task"
+    [(value)]="title"
+    (enter)="onSubmit()"
+    [styleClass]="'input-task'"
+  ></app-input>
+
+  <app-button [variant]="'primary'" [isDisabled]="!title" (click)="onSubmit()">Add</app-button>
+</div>

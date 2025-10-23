@@ -1,0 +1,58 @@
+.task-item {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-item.completed-task {
+  border-left-color: #9E9E9E;
+}
+
+.task-item .left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-grow: 1;
+}
+
+.task-item .left span {
+  font-size: 1.1em;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  user-select: none;
+}
+
+.task-item .left .completed {
+  text-decoration: line-through;
+  color: #9E9E9E;
+  font-style: italic;
+}
+
+.task-item .btn-remove {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.task-item .btn-remove:hover {
+  background-color: #d32f2f;
+}

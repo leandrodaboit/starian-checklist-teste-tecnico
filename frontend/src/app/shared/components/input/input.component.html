@@ -1,0 +1,12 @@
+<div class="input-wrapper">
+  <input
+    class="app-input"
+    [type]="type"
+    [placeholder]="placeholder"
+    [value]="value"
+    [disabled]="disabled"
+    [ngClass]="styleClass"
+    (input)="onInput($event)"
+    (keydown)="onKeyDown($event)"
+  />
+</div>
