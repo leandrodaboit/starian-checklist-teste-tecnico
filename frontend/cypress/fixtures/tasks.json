@@ -1,0 +1,8 @@
+{
+  "data": [
+    { "id": 1, "title": "Interview with HR", "completed": true },
+    { "id": 2, "title": "Deliver the case study", "completed": true },
+    { "id": 3, "title": "Pass the technical interview", "completed": false },
+    { "id": 4, "title": "Start working at Softplan", "completed": false }
+  ]
+}
